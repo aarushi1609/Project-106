@@ -1,0 +1,38 @@
+<html>
+
+<head>
+  <title>Sound Controlled Animals</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:wght@300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <center>
+    <div id="header-div">
+      <h2>Sound Controlled Animals!</h2>
+      <h5>Note: Play sounds like meowing and barking.</h5>
+    </div>
+    <button id="start-button" onclick="start();" class="">Start</button>
+    <br>
+    <div id="dectected-div">
+      <h4>Dectected Dog: <span id="dog-results"></span></h4>
+      <h4>Dectected Cat: <span id="cat-results"></span></h4>
+      <h4>Dectected sound is of:<span id="results-sound"></span></h4>
+    </div>
+
+    <img src="PngItem_1228102.png" id="ear_image" width="200" height="275">
+
+  </center>
+  <script src="main.js"></script>
+
+</body>
+
+</html>

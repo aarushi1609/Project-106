@@ -1,0 +1,54 @@
+body 
+{
+    background-color: #EADCA6;
+    font-family: 'Lato', sans-serif;
+}
+
+#header-div
+{
+    background-color: #E2C275;
+    padding: 10px;
+    padding-top: 5px;
+    margin: 20px;
+    border-radius: 20px;
+    width: 700px;
+    color: #FBFBFB;
+}
+
+h2
+{
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+}
+
+#start-button
+{
+    width: 100px;
+    padding: 5px;
+    border: none;
+    border-radius: 20px;
+    background-color: #C36A2D;
+    color: #FBFBFB;
+}
+
+#dectected-div
+{
+    background-color: #E2C275;
+    padding: 10px;
+    padding-top: 5px;
+    margin: 20px;
+    border-radius: 20px;
+    width: 250px;
+    color: #FBFBFB;
+}
+
+#results-div
+{
+    background-color: #E2C275;
+    padding: 10px;
+    padding-top: 5px;
+    margin: 20px;
+    border-radius: 20px;
+    width: 250px;
+    color: #FBFBFB;
+}
