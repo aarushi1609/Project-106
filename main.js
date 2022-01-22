@@ -9,6 +9,9 @@ function modelReady()
     classfier.classify(gotResults);
 }
 
+dog_results = 0;
+cat_results = 0;
+
 function gotResults(error, results)
 {
     if (error)
@@ -23,16 +26,14 @@ function gotResults(error, results)
         accuracy = Math.floor(results[0].confidence*100);
         document.getElementById("results-accuracy").innerHTML = accuracy + "%";
         
-        dog_results = 0;
-        cat_results = 0;
 
-        if("results-sound" == "Dog Barking")
+        if(label == "Dog Barking")
         {
             document.getElementById("image").src="funny-animals-dog.gif";
             dog_results = dog_results+1;
             document.getElementById("dog-results").innerHTML = dog_results;
         }
-        if("results-sound" == "Cat Meowing")
+        if(label == "Cat Meowing")
         {
             document.getElementById("image").src="cute-kitty-best-kitty.gif";
             cat_results = cat_results+1;
@@ -40,7 +41,7 @@ function gotResults(error, results)
         }
         else
         {
-            document.getElementById("image").src="ear-human-body-transparent_26367";
+            document.getElementById("image").src="PngItem_1228102.png";
         }
     }
 }
